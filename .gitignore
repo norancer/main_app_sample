@@ -1,6 +1,7 @@
 /.bundle
 /.project
 /chef-repo
+/config/app_config.yml
 /config/database.yml
 /config/initializers/*_engine.rb
 /config/initializers/secret_token.rb
