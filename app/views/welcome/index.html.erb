@@ -1,5 +1,7 @@
 <h1 class="text-center"><%= t 'title.Welcome' %></h1>
 
-<p>
-Todo: link_to t('Blog'), blorgh.articles_path
-</p>
+<menu type="navi">
+  <% (APP_CONFIG['modules'].presence || []).each do |name| %>
+    <li><%= link_to t(name.capitalize), send(name.downcase + '_path') %></li>
+  <% end %>
+</menu>

@@ -54,6 +54,4 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-
-  mount Blorgh::Engine, at: "/blog"
 end

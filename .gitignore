@@ -5,6 +5,7 @@
 /config/database.yml
 /config/initializers/*_engine.rb
 /config/initializers/secret_token.rb
+/config/routes/*
 /config/secrets.yml
 /db/*.sqlite3
 /db/*.sqlite3-journal
