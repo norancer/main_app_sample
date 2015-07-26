@@ -23,6 +23,8 @@ config:
 
 bundle:
 
+`export BUNDLE_GEMFILE=Gemfile.local`
+
 `bundle install --path vendor/bundle`
 
 migration:
@@ -35,4 +37,34 @@ start:
 
 `bundle exec rails s -b 0.0.0.0`
 
+#Addons
+
+* Not now
+
+#Plugins
+
+* [blorgh_engine](https://github.com/norancer/blorgh_engine)
+
+
+# Development tips
+
+unit test:
+
+`bundle exec rake spec`
+
+coverage:
+
+`COVERAGE=on bundle exec rake spec`
+
+code analyzer:
+
+`bundle exec rubocop -c .rubycop.yml --rails -D`
+
+automates:
+
+`bundle exec guard`
+
+integration test:
+
+`bundle exec rake spec::acceptance`
 

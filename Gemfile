@@ -21,14 +21,14 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+# gem 'sdoc', '~> 0.4.0', group: :doc
 
 
-# devise
+# user management
 gem 'devise'
 # readline
 gem 'rb-readline'
-# draper
+# layer of presentation
 gem 'draper'
 
 # Use ActiveModel has_secure_password
@@ -40,17 +40,42 @@ gem 'draper'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  # gem 'byebug'
+# Initial data and test data fixtures
+gem 'factory_girl_rails'
 
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  # gem 'web-console', '~> 2.0'
+group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'spring-commands-rspec'
+
+  # Automatic testing
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+
+  # database cleaner
+  gem 'database_cleaner'
+
+  # matchers
+  gem 'shoulda-matchers'
+
+  # integration testing
+  gem 'capybara'
+  gem 'turnip'
+  gem 'launchy'
+
+  # PhantomJS
+  gem 'poltergeist'
+
+  # coverage
+  gem 'simplecov', :require => false
+  gem 'simplecov-rcov', :require => false
+
+  # Ruby static code analyzer
+  gem 'rubocop', require: false
+  gem 'guard-rubocop'
+
+  # Document generation
+  gem 'yard', require: false
 
 end
-
-
-
