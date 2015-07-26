@@ -20,5 +20,6 @@
 /tmp
 /.vagrant
 /Vagrantfile
+/vendor/bundle
 /vendor/bundler
 /vendor/engines
