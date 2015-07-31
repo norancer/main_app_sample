@@ -71,3 +71,9 @@ integration test:
 scss code analyzer:
 
 `bundle exec scss-lint`
+
+rails best practices:
+
+`bundle exec rails_best_practices`
+
+

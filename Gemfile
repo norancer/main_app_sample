@@ -79,6 +79,9 @@ group :development, :test do
   # Scss code analyzer
   gem 'scss_lint', :require => false
 
+  # Rails best practices
+  gem 'rails_best_practices', require: false
+
   # Document generation
   gem 'yard', require: false
 
