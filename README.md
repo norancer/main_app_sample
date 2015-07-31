@@ -68,3 +68,6 @@ integration test:
 
 `bundle exec rake spec::acceptance`
 
+scss code analyzer:
+
+`bundle exec scss-lint`

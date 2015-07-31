@@ -51,6 +51,7 @@ group :development, :test do
 
   # Automatic testing
   gem 'rspec-rails'
+  gem 'fuubar'
   gem 'guard-rspec'
 
   # database cleaner
@@ -74,6 +75,9 @@ group :development, :test do
   # Ruby static code analyzer
   gem 'rubocop', require: false
   gem 'guard-rubocop'
+
+  # Scss code analyzer
+  gem 'scss_lint', :require => false
 
   # Document generation
   gem 'yard', require: false

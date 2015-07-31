@@ -1,0 +1,11 @@
+exclude:
+  - 'app/assets/stylesheets/scaffolds.scss'
+  - 'vendor/bundle/*'
+
+linters:
+  BorderZero:
+    enabled: false
+
+  Indentation:
+    enabled: true
+    width: 2
