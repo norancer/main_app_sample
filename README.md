@@ -23,9 +23,7 @@ config:
 
 bundle:
 
-`export BUNDLE_GEMFILE=Gemfile.local`
-
-`bundle install --path vendor/bundle`
+`export BUNDLE_GEMFILE=Gemfile.local; bundle install --path vendor/bundle`
 
 migration:
 
@@ -33,9 +31,7 @@ migration:
 
 start:
 
-`export BUNDLE_GEMFILE=Gemfile.local`
-
-`bundle exec rails s -b 0.0.0.0`
+`export BUNDLE_GEMFILE=Gemfile.local; bundle exec rails s -b 0.0.0.0`
 
 #Addons
 
@@ -58,7 +54,7 @@ coverage:
 
 code analyzer:
 
-`bundle exec rubocop -c .rubycop.yml --rails -D`
+`bundle exec rubocop -c .rubocop.yml --rails -D`
 
 automates:
 
