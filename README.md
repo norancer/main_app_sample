@@ -76,4 +76,6 @@ rails best practices:
 
 `bundle exec rails_best_practices`
 
+rails security scanner:
 
+`bundle exec brakeman`

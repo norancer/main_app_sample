@@ -69,18 +69,21 @@ group :development, :test do
   gem 'poltergeist'
 
   # coverage
-  gem 'simplecov', :require => false
-  gem 'simplecov-rcov', :require => false
+  gem 'simplecov', require: false
+  gem 'simplecov-rcov', require: false
 
   # Ruby static code analyzer
   gem 'rubocop', require: false
   gem 'guard-rubocop'
 
   # Scss code analyzer
-  gem 'scss_lint', :require => false
+  gem 'scss_lint', require: false
 
   # Rails best practices
   gem 'rails_best_practices', require: false
+
+  # Rails security scanner
+  gem 'brakeman', require: false
 
   # Document generation
   gem 'yard', require: false
