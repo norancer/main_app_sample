@@ -78,3 +78,7 @@ N+1 query scanner:
     Please run in a browser.  
     If applicable query is found, the alert display is output.
 
+documentation:
+
+    bundle exec yard
+    

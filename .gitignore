@@ -10,6 +10,7 @@
 /coverage
 /db/*.sqlite3
 /db/*.sqlite3-journal
+/doc/yardoc/
 /Gemfile.local
 /Gemfile.local.lock
 /.idea
@@ -23,3 +24,4 @@
 /vendor/bundle
 /vendor/bundler
 /vendor/engines
+/.yardoc
