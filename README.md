@@ -81,4 +81,8 @@ N+1 query scanner:
 documentation:
 
     bundle exec yard
-    
+
+erd:
+
+    yum -y install graphviz
+    bundle exec erd

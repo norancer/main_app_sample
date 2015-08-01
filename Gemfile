@@ -91,6 +91,8 @@ group :development, :test do
   # Document generation
   gem 'yard', require: false
 
+  # Erd generation
+  gem 'rails-erd'
 end
 
 # plugin gemfile

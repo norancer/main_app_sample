@@ -1,2 +1,2 @@
 
-FactoryGirl.create(:user)
+FactoryGirl.create(:testuser)

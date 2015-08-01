@@ -11,6 +11,7 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /doc/yardoc/
+/erd.pdf
 /Gemfile.local
 /Gemfile.local.lock
 /Gemfile.lock
