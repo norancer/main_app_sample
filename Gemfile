@@ -85,6 +85,9 @@ group :development, :test do
   # Rails security scanner
   gem 'brakeman', require: false
 
+  # N+1 query scanner
+  gem "bullet"
+
   # Document generation
   gem 'yard', require: false
 
