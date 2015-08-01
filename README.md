@@ -86,3 +86,7 @@ erd:
 
     yum -y install graphviz
     bundle exec erd
+
+erb to slim:
+
+    bundle exec erb2slim app/views app/views -d
