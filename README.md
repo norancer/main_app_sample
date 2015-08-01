@@ -16,11 +16,11 @@ config:
     cp config/sample/database.yml.sample config/database.yml
     cp config/sample/secrets.yml.sample config/secrets.yml
     cp config/sample/app_config.yml.sample config/app_config.yml
-    cp Gemfile.local.sample Gemfile.local
+    cp Gemfile.plugin.sample Gemfile.plugin
 
 bundle:
 
-    export BUNDLE_GEMFILE=Gemfile.local; bundle install --path vendor/bundle
+    bundle install --path vendor/bundle
 
 migration:
 
@@ -28,7 +28,7 @@ migration:
 
 start:
 
-    export BUNDLE_GEMFILE=Gemfile.local; bundle exec rails s -b 0.0.0.0
+    bundle exec rails s -b 0.0.0.0
 
 #Addons
 

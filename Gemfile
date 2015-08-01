@@ -92,3 +92,9 @@ group :development, :test do
   gem 'yard', require: false
 
 end
+
+# plugin gemfile
+plugin_gemfile = File.join(File.dirname(__FILE__), "Gemfile.plugin")
+if File.exists?(plugin_gemfile)
+  eval_gemfile plugin_gemfile
+end

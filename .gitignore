@@ -13,6 +13,8 @@
 /doc/yardoc/
 /Gemfile.local
 /Gemfile.local.lock
+/Gemfile.lock
+/Gemfile.plugin
 /.idea
 /log/*
 !/log/.keep
