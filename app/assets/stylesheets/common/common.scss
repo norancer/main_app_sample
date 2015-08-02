@@ -5,7 +5,7 @@
   background-color: $body-bg-color;
 }
 
-@mixin body-font{
+@mixin body-font {
   color: $body-font-color;
 }
 
@@ -25,16 +25,18 @@
 }
 
 @mixin header-a {
-    color: $head-a-color;
-    background-color: $head-bg-color;
-    border-color: $head-bg-active-color;
-    &:visited {
-      color: $head-visited-color;
-    }
-    &:hover,
-    &:focus {
-      color: $head-focus-color;
-    }
+  color: $head-a-color;
+  background-color: $head-bg-color;
+  border-color: $head-bg-active-color;
+
+  &:visited {
+    color: $head-visited-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $head-focus-color;
+  }
 }
 
 // ---- common ------
@@ -46,17 +48,17 @@ html {
 body {
   @include body-bg;
   @include body-font;
-  height: 100%;
   font-family: 'Lucida Grande','Segoe UI','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo,'メイリオ',sans-serif;
   font-size: 13px;
+  height: 100%;
   line-height: 18px;
 }
 
 #wrapper {
-  min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -2.3em;
+  min-height: 100%;
 }
 
 .header {
@@ -71,8 +73,8 @@ body {
     line-height: 20px;
   }
   
- .navbar-nav > .active > a,
- .navbar-nav > .open > a {
+  .navbar-nav > .active > a,
+  .navbar-nav > .open > a {
     @include header-a;
     @include header-bg-active;
     &:hover,
@@ -88,10 +90,10 @@ body {
     }
   }
   
- .navbar-nav .open .dropdown-menu > li > a,
- .navbar-nav > li > a {
-   @include header-a;
- }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav > li > a {
+    @include header-a;
+  }
 
   .navbar-toggle:hover,
   .navbar-toggle:focus {
@@ -109,19 +111,23 @@ body {
   height: 60px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 767px ) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   * {
     font-size: 12px;
   }
+
   h1 {
     font-size: 1.6em;
   }
+
   h2 {
     font-size: 1.5em;
   }
+
   h3 {
     font-size: 1.4em;
   }
+
   h4 {
     font-size: 1.3em;
   }
@@ -135,8 +141,8 @@ p, ol, ul, td {
 
 pre {
   background-color: #eee;
-  padding: 10px;
   font-size: 11px;
+  padding: 10px;
 }
 
 div {
@@ -146,32 +152,34 @@ div {
 }
 
 #notice {
-  color: green;
+  color: #008000;
 }
 
 .field_with_errors {
-  padding: 2px;
   display: table;
-  @extend .has-error; 
+  padding: 2px;
+  @extend .has-error;
 }
 
 #error_explanation {
-  width: 450px;
-  border: 2px solid red;
+  background-color: #f0f0f0;
+  border: 2px solid #f00;
+  margin-bottom: 20px;
   padding: 7px;
   padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+  width: 450px;
+
   h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
     background-color: #c00;
     color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin: -7px;
+    margin-bottom: 0;
+    padding: 5px 5px 5px 15px;
+    text-align: left;
   }
+
   ul li {
     font-size: 12px;
     list-style: square;
@@ -179,12 +187,13 @@ div {
 }
 
 .nav-pills > li.active > a {
-  color : $body-font-active-color;
   background-color: $body-bg-active-color;
+  color: $body-font-active-color;
+
   &:hover,
   &:focus {
-    color : $body-font-active-color;
     background-color: $body-bg-active-color;
+    color: $body-font-active-color;
   }
 }
 
@@ -194,10 +203,10 @@ div {
 
 .footable > thead > tr > th,
 .footable > thead > tr > td {
-  color : $body-font-active-color;
-  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5);
   background-color: $body-bg-active-color;
   background-image: linear-gradient(to bottom, $body-bg-active-color, $body-bg-active-color);
+  color: $body-font-active-color;
+  text-shadow: 0 0 0 rgba(255, 255, 255, .5);
 }
 
 .item {
