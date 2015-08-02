@@ -55,6 +55,7 @@ code analyzer:
 
 automates:
 
+    # rspec & rubocop & brakeman
     bundle exec guard
 
 integration test:
@@ -64,6 +65,15 @@ integration test:
 scss code analyzer:
 
     bundle exec scss-lint
+
+coffee script analyzer:
+
+    yum install epel-release
+    yum install nodejs npm --enablerepo=epel
+    yum install gcc gcc-c++
+    npm install -g coffeelint
+
+    bundle exec coffeelint -r ./app/assets/javascripts
 
 rails best practices:
 
@@ -85,6 +95,7 @@ documentation:
 erd:
 
     yum -y install graphviz
+    
     bundle exec erd
 
 erb to slim:

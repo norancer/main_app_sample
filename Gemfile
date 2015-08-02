@@ -79,11 +79,15 @@ group :development, :test do
   # Scss code analyzer
   gem 'scss_lint', require: false
 
+  # Coffee script analyzer
+  gem 'coffeelint', require: false
+
   # Rails best practices
   gem 'rails_best_practices', require: false
 
   # Rails security scanner
   gem 'brakeman', require: false
+  gem 'guard-brakeman'
 
   # N+1 query scanner
   gem "bullet"
