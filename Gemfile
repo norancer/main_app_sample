@@ -31,6 +31,12 @@ gem 'rb-readline'
 # layer of presentation
 gem 'draper'
 
+# Css framework
+gem 'bootstrap-sass'
+
+# Jquery turbolinks
+gem 'jquery-turbolinks'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
