@@ -12,8 +12,6 @@ AllCops:
     - 'Gemfile'
     - 'Rakefile'
 
-
-
 ClassAndModuleChildren:
   Enabled: false
 
