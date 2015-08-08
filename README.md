@@ -41,26 +41,26 @@ start:
 
 # Development tips
 
-unit test:
+rspec unit test:
 
-    bundle exec rake spec
+    bundle exec rspec -fd
 
-coverage:
+rspec coverage:
 
-    COVERAGE=on bundle exec rake spec
+    COVERAGE=on bundle exec rspec -fd
 
-code analyzer:
+rspec integration test:
+
+    bundle exec rspec -r turnip/rspec -fd
+
+ruby code analyzer:
 
     bundle exec rubocop -c .rubocop.yml --rails -D
 
 automates:
 
-    # rspec & rubocop & brakeman
-    bundle exec guard
-
-integration test:
-
-    bundle exec rake spec::acceptance
+    # unit test & rubocop
+    bundle exec guard -p
 
 scss code analyzer:
 
@@ -95,7 +95,7 @@ documentation:
 erd:
 
     yum -y install graphviz
-    
+
     bundle exec erd
 
 erb to slim:

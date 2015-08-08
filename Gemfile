@@ -55,6 +55,9 @@ group :development, :test do
   gem 'spring'
   gem 'spring-commands-rspec'
 
+  # guard
+  gem 'guard'
+
   # Automatic testing
   gem 'rspec-rails'
   gem 'fuubar'
