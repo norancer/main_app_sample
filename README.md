@@ -51,7 +51,7 @@ rspec coverage:
 
 rspec integration test:
 
-    bundle exec rspec -r turnip/rspec -fd
+    bundle exec rspec spec/acceptance -r turnip/rspec -fd
 
 ruby code analyzer:
 
